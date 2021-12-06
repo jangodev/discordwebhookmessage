@@ -25,9 +25,9 @@ Lorem Ipsum is simply dummy text of the printing and typesetting Lorem IpsumSidu
 
 
       const params = {
-        username: "Nebula User",
-        avatar_url: "",
-        content: "joe mama"
+        username: "[put the name of your webhook here]",
+        avatar_url: "[paste image address here for your webhook avatar]",
+        content: "[put your message here]"
       }
 
       request.send(JSON.stringify(params)); */
@@ -39,16 +39,18 @@ let input = document.getElementById("cool");
 let div = document.getElementById("lmao");
 input.addEventListener("click", lmao)
 let request = new XMLHttpRequest();
-request.open("POST", "https://discord.com/api/webhooks/917195786293481552/j94rCZGrz5i7iE8G14umXFNvrIFdtFxwqqLtX4zf3gbpuUZ0p4-Rg4zWjhKCmBBGb31K");
+request.open("POST", "YOUR WEBHOOK LINK HERE");
 
 request.setRequestHeader('Content-type', 'application/json');
 
 let params = {
-username: "Nebula User",
+username: "",
 avatar_url: "",
 content: input.value
  }
 
+
+// ping spam prevention
 if (input.value == "@everyone") {
   console.log('yeah works')
   params.content = "[MESSAGE REMOVED]"
