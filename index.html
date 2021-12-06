@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Discord Chatbox</title>
+  <link href="//db.onlinewebfonts.com/c/4f6fb2fa3c231278167b36e966718cbb?family=Uni+Sans+Heavy" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+	<center><button id = "lmao" onclick="lesgo()">Send</button></center>
+
+  <h1>What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting Lorem IpsumSiduasopifsaifjasofsa jkfsajilkfnsdkfgnsd lkjgdshil fjkdhklsd.,jfshdi lkjfhildsk fj lhil edskljfhsilfkhseufi   lwehriufhiewu  fhoewu  fhes  ou;fhauwofhsei uodfhesiuofhe   wioufhueiwofhuewtrhgesiuof hyeqwiukjrhfewilukjhfewiulfh. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by acci</h1>
+
+<center><input type="text" id="cool" placeholder="Send a message to the Nebula server, #main-chat"></center>
+
+
+
+  </body>
+
+  <script>
+/* request.setRequestHeader('Content-type', 'application/json');
+
+
+      const params = {
+        username: "Nebula User",
+        avatar_url: "",
+        content: "joe mama"
+      }
+
+      request.send(JSON.stringify(params)); */
+
+function lesgo() {
+
+
+let input = document.getElementById("cool");
+let div = document.getElementById("lmao");
+input.addEventListener("click", lmao)
+let request = new XMLHttpRequest();
+request.open("POST", "https://discord.com/api/webhooks/917195786293481552/j94rCZGrz5i7iE8G14umXFNvrIFdtFxwqqLtX4zf3gbpuUZ0p4-Rg4zWjhKCmBBGb31K");
+
+request.setRequestHeader('Content-type', 'application/json');
+
+let params = {
+username: "Nebula User",
+avatar_url: "",
+content: input.value
+ }
+
+if (input.value == "@everyone") {
+  console.log('yeah works')
+  params.content = "[MESSAGE REMOVED]"
+}
+
+else {
+  input.value === ""
+}
+
+request.send(JSON.stringify(params));
+
+
+}
+
+
+
+
+  </script>
+
+<link href="style.css" rel="stylesheet">
+  
+</html>
