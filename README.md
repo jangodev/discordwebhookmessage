@@ -1,11 +1,11 @@
 # Send messages with discord webhooks! Great for making external discord chatbox's
--- Enter your webhook URL where it says "WEBHOOK URL HERE"
+-Enter your webhook URL where it says _"WEBHOOK URL HERE"_ (keep the quotation marks)
 
-# I've made sure to disable @everyone pings inside of the chatbox to prevent ping spam.
+# Notes
+- Disabled @everyone/@here
+- Since this is an old version, if a person types a message that contains @everyone/@here, it will not remove. You may want to fix this.
 
 
--- i did not make an external js file cause im too lazy
-
-#ENJOY! Visit the discord server for support:
+# Visit the discord server for support:
 
 https://discord.gg/Nvuf6zDdWy
