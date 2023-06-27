@@ -1,3 +1,5 @@
+
+# (EXTREMELY OLD, NON-UPDATED)
 # Send messages with discord webhooks! Great for making external discord chatbox's
 -Enter your webhook URL where it says _"WEBHOOK URL HERE"_ (keep the quotation marks)
 
